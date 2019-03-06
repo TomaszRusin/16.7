@@ -1,0 +1,60 @@
+
+html, 
+body,
+.board {
+    height: 100%;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    & > .wrapper {
+        height: 90%;
+        width: 33%;
+        background-color: aliceblue;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.column-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 90%;
+}
+
+.column-title,
+.create-column,
+.add-card,
+.btn-delete {
+    margin: 5px;
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgb(87, 177, 255);
+}
+
+.card {
+    background-color: rgb(168, 214, 255);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    min-height: 100px;
+}
