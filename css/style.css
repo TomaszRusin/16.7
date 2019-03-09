@@ -2,7 +2,7 @@ html, body, .board { height: 100%; margin: 0 5px; text-align: center; }
 
 .column-container { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; height: 100%; }
 
-.column-container > .wrapper { height: 90%; width: 33%; background-color: aliceblue; }
+.column-container > div { height: 90%; width: 33%; background-color: aliceblue; }
 
 .column { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; margin: 10px 20px; background-color: white; }
 

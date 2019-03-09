@@ -12,7 +12,6 @@ function Column(id, name) {
       if (event.target.classList.contains('add-card')) {
         var cardName = prompt("Enter the name of the card");
         event.preventDefault();
-        self.addCard(new Card(cardName));
 
         var data = new FormData();
         data.append('name', cardName);
@@ -26,12 +25,11 @@ function Column(id, name) {
           .then(function(resp) {
             return resp.json();
           })
-          .then(function() {
+          .then(function(resp) {  
             var card = new Card(resp.id, cardName);
             self.addCard(card);
           });
       
-        self.addCard(new Card(cardName));
       }
   });
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.26.3",
+    "cors-anywhere": "^0.4.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
